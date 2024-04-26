@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *{
     padding:0;
@@ -115,3 +116,122 @@ a:hover{
 
 
 
+=======
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+form{
+    width: 600px;
+    border: 2px solid #333;
+    padding: 5rem;
+    background-color: #333;
+    border: none;
+    border-radius:20px;
+    color:aliceblue;
+}
+h1{
+    display: block;
+    border:2px solid #333;
+    width: 95%;
+    padding:10px;
+    margin: 10px;
+    border-radius:10px;
+}
+
+label{
+    color:white;
+    font-size:18px;
+    padding: 10px;
+    font-weight:300;
+}
+
+input{
+    display:block;
+    border: 2px solid #333;
+    width: 95%;
+    padding: 10px;
+    margin:10px ;
+    border-radius: 10px;
+}
+
+button{
+    float:right;
+    background-color:#cf2e2e;
+    padding: .5rem;
+    color: white;
+    border:none;
+    width:40%;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color:white;
+    color:#333;
+}
+
+a{
+    float: left;
+    margin: left 10px;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+
+
+.menu{
+    position:absolute;
+    top:10px;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:25px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float:left;
+}
+
+.menu .navbar ul li a{
+    font-size:18px;
+    padding: 20px;
+    color:aquamarine;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: white;
+}
+
+
+
+>>>>>>> 6d01c580957d0997cbecf649d0fc8c03e839afa4
