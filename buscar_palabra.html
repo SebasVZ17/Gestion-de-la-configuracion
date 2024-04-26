@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleTexto.css">
+    <title>Buscar Palabra</title>
+</head>
+<body>
+    <h1>Escribe tu texto</h1>
+    <form id="buscarForm">
+        <div class="header">
+            <a href="index.html" class="logout-button">Cerrar sesión</a>
+        </div>
+        <label for="texto">Texto:</label><br>
+        <textarea id="texto" name="texto" rows="5" cols="50"></textarea><br><br>
+        <label for="palabra">Palabra a buscar</label><br>
+        <input type="text" id="palabra" name="palabra"><br><br>
+        <input type="button" value="Buscar" onclick="buscarPalabra()">
+    </form>
+    
+    <div id="resultado" style="display:none;">
+        <h2>Resultado de la búsqueda</h2>
+        <p id="conteo"></p>
+    </div>
+
+    <script>
+        function buscarPalabra() {
+            var texto = document.getElementById('texto').value;
+            var palabra = document.getElementById('palabra').value.toLowerCase();
+
+            var palabras = texto.toLowerCase().split(' ');
+            var conteo = 0;
+            for (var i = 0; i < palabras.length; i++) {
+                if (palabras[i] === palabra) {
+                    conteo++;
+                }
+            }
+
+            var resultadoElement = document.getElementById('resultado');
+            var conteoElement = document.getElementById('conteo');
+            conteoElement.textContent = "La palabra '" + palabra + "' se repite " + conteo + " veces en el texto ingresado.";
+            resultadoElement.style.display = "block";
+        }
+    </script>
+</body>
+</html>
